@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#142b3b">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="DriveLab">
+  <title>DriveLab · 车载硬件知识卡</title>
+  <link rel="manifest" href="manifest.webmanifest">\n  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand-mark">D</div>
+      <div class="brand-copy">
+        <div class="brand-name">DriveLab</div>
+        <div class="brand-sub">车载硬件 · 产品实战知识库</div>
+      </div>
+      <button class="icon-btn" data-action="show-about" aria-label="说明">ⓘ</button>
+    </header>
+    <main id="main" class="main-content" aria-live="polite">
+      <div class="loading">正在准备你的知识卡片…</div>
+    </main>
+    <nav class="bottom-nav">
+      <button class="nav-item active" data-tab="home"><span class="nav-icon">⌂</span><span>今日</span></button>
+      <button class="nav-item" data-tab="study"><span class="nav-icon">▤</span><span>学习</span></button>
+      <button class="nav-item" data-tab="library"><span class="nav-icon">▦</span><span>知识库</span></button>
+      <button class="nav-item" data-tab="mine"><span class="nav-icon">◉</span><span>我的</span></button>
+    </nav>
+  </div>
+  <div id="modal-root"></div>
+  <script src="app.js"></script>
+</body>
+</html>
